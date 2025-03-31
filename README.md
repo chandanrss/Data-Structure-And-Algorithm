@@ -92,34 +92,8 @@ Backtracking is an algorithmic technique for solving problems incrementally, rem
 
 - **Example**: Permutations, N-Queens problem.
 
-## Example Code
-
-Here are some examples of algorithms implemented in this repository:
-
-1. **Bubble Sort**:
-
-```javascript
-function bubbleSort(arr) {
-  let n = arr.length;
-  for (let i = 0; i < n - 1; i++) {
-    for (let j = 0; j < n - 1 - i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-      }
-    }
-  }
-  return arr;
-}
-
-
-
 ## Usage
 To use the algorithms and data structures in this repository, simply import the relevant function(s) into your project. Here is how you can use the bubble sort algorithm:
-
-```javascript
-const bubbleSort = require('path_to_bubbleSort');
-let sortedArray = bubbleSort([4, 2, 7, 1, 3]);
-console.log(sortedArray);
 
 
 ## Contributions
