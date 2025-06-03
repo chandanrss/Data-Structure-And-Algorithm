@@ -45,8 +45,8 @@ var mergeTwoLists = function (list1, list2) {
 };
 
 // Example Usage (Corrected to create linked lists)
-const list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-const list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+const list1 = new ListNode(1, new ListNode(6, new ListNode(4, new ListNode(55))));
+const list2 = new ListNode(1, new ListNode(11, new ListNode(4)));
 
 let mergedList = mergeTwoLists(list1, list2);
 
@@ -58,8 +58,8 @@ function printList(head) {
     result.push(current.val);
     current = current.next;
   }
-	
+
   console.log(result);
 }
 
-printList(mergedList); // Output: [1, 1, 2, 3, 4, 4]
+printList(mergedList); // Output
