@@ -16,10 +16,6 @@ var reverseList = function(head) {
 
 
 
-
-//Testing......
-
-
 // Definition for singly-linked list node
 function ListNode(val, next) {
     this.val = val || 0;

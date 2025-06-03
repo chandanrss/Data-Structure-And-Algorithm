@@ -58,6 +58,7 @@ function printList(head) {
     result.push(current.val);
     current = current.next;
   }
+	
   console.log(result);
 }
 
