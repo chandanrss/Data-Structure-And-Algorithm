@@ -26,17 +26,18 @@ var validateIPAddress = function (ipAddr) {
   if (ipAddr.length < 7) return false;
 
   //Check IP Format and Length
-  const v = s.split(".");
+  const v = ipAddr.split(".");
   if (v.length !== 4) return false;
 
   for (let i = 0; i < v.length; i++) {
     const temp = v[i];
+    //lenght should be one, and don't start with 0
     if (temp.length > 1 && temp[0] === "0") return false;
 
     for (let j = 0; j < temp.length; j++) {
       if (isNaN(temp[j])) return false;
     }
-
+    //Check all digits as Integer.
     if (parseInt(temp) > 255) return false;
   }
   return true;
