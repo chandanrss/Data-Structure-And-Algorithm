@@ -28,4 +28,4 @@ var minSubstringsWithUniqueChars = function(s) {
     return count;
 };
 
-// minSubstringsWithUniqueChars("abcab")
+minSubstringsWithUniqueChars("abcab")
