@@ -38,5 +38,23 @@ const tree = {
   right: { val: 2, left: null, right: { val: 455, left: null, right: null } },
 };
 
+const tree1 = {
+  val: 1,
+  left: { val: 2, left: { val: 3, left: null, right: null }, right: null },
+  right: {
+    val: 2,
+    left: null,
+    right: {
+      val: 455,
+      left: null,
+      right: {
+        val: 2,
+        left: null,
+        right: { val: 455, left: null, right: null },
+      },
+    },
+  },
+};
+
 // invertTree(tree);
-console.log("Path Tree", binaryTreePaths(tree));
+console.log("Path Tree", binaryTreePaths(tree1));

@@ -1,5 +1,4 @@
 // K'th Largest Element in BST when modification to BST is not allowed
-// Last Updated : 28 Oct, 2024
 // Given a Binary Search Tree (BST) and a positive integer k, 
 // the task is to find the kth largest element in the Binary Search Tree.
 

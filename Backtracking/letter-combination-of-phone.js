@@ -2,9 +2,6 @@
 
 // A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
-
- 
-
 // Example 1:
 
 // Input: digits = "23"
@@ -18,18 +15,13 @@
 // Input: digits = "2"
 // Output: ["a","b","c"]
 
-
-
 function letterCombination(digit) {
-
   if (!digit.length) return [];
 
   let keywordArr = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "vwyz"];
 
   let result = [];
   var allCombination = function (start, currentCombination) {
-    
-    
     if (start == digit.length) {
       result.push(currentCombination);
       return result;
@@ -37,10 +29,10 @@ function letterCombination(digit) {
 
     let letters = keywordArr[digit[start] - 2];
 
-    // console.log(start, letters, start);
+    console.log(start, letters, start);
 
     for (let letter of letters) {
-        console.log(currentCombination+ letter);
+      console.log(currentCombination + letter);
       allCombination(start + 1, currentCombination + letter);
     }
   };
@@ -49,4 +41,4 @@ function letterCombination(digit) {
   return result;
 }
 
-console.log(letterCombination("9"));
+console.log(letterCombination("23"));
