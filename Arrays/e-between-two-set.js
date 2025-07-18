@@ -52,7 +52,3 @@ var factorBetweenTwoSet = function (a, b) {
 const a = [2, 4];
 const b = [16, 32, 96];
 console.log(factorBetweenTwoSet(a, b)); // Output: 3
-
-
-
-// This line is written by Kanchan.
