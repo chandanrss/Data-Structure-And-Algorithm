@@ -64,7 +64,7 @@ console.log(climbStairsDP(5));
 // Sol 3
 // Optimized DP (Best Solution)
 //
-function climbStairs(n) {
+function climbStairsDP2(n) {
     if (n <= 2) return n;
 
     let prev1 = 2;
@@ -78,3 +78,5 @@ function climbStairs(n) {
 
     return prev1;
 }
+
+console.log(climbStairsDP(5));
