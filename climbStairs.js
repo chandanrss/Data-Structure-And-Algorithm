@@ -18,7 +18,6 @@
 // 2. 1 step + 2 steps
 // 3. 2 steps + 1 step
 
-
 // Sol 1
 
 //Brute Force
@@ -30,8 +29,6 @@ var climbStairs = function (n) {
 // console.log(climbStairs(3));
 // TC = O(2^)
 // Very slow because of repeated calculations.
-
-
 
 //
 // Sol 2
@@ -55,28 +52,25 @@ function climbStairsDP(n) {
 
 console.log(climbStairsDP(5));
 
-
 // TC = O(n)
 // SP = O(n)
-
-
 
 // Sol 3
 // Optimized DP (Best Solution)
 //
 function climbStairsDP2(n) {
-    if (n <= 2) return n;
+  if (n <= 2) return n;
 
-    let prev1 = 2;
-    let prev2 = 1;
+  let prev1 = 2;
+  let prev2 = 1;
 
-    for (let i = 3; i <= n; i++) {
-        let curr = prev1 + prev2;
-        prev2 = prev1;
-        prev1 = curr;
-    }
+  for (let i = 3; i <= n; i++) {
+    let curr = prev1 + prev2;
+    prev2 = prev1;
+    prev1 = curr;
+  }
 
-    return prev1;
+  return prev1;
 }
 
-console.log(climbStairsDP(5));
+console.log(climbStairsDP2(5));
